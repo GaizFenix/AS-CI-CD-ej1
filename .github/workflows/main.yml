@@ -8,10 +8,10 @@ jobs:
 
     steps:
       - name: Download code
-        run: actions/checkout@v5
+        uses: actions/checkout@v5
 
       - name: Install pytest
-        uses: pip install pytest
+        run: pip install pytest
 
       - name: Run tests
         run: pytest test.py
